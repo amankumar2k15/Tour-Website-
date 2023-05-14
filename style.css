@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* <-----Header-Section----->  */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+ul {
+    background-color: black;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    float: left;
+    position: relative;
+}
+
+ul li:last-child {
+    float: right;
+}
+
+ul li:nth-child(5) ul {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+ul li:nth-child(5) ul li {
+    padding: 12px 27px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+ul li:nth-child(5):hover ul {
+    display: block;
+}
+
+ul li:nth-child(5) ul li:hover {
+    background-color: #ccc;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 15px 24px;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+ul li:last-child a:hover {
+    background-color: red;
+    color: black;
+}
+
+ul li:nth-child(5) i {
+    margin-left: 5px;
+}
+
+/* <-----Main-Section-Container----->  */
+
+/* <-----img-Section----->  */
+.img-container {
+    height: 750px;
+    background: url(img/mainImg.jpg) no-repeat center center/cover;
+    position: relative;
+}
+
+.img-container .head {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.img-container h2 {
+    top: calc(84% - 4px);
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.img-container p {
+    top: calc(90% - 4px);
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+
+/* <-----Band-Section----->  */
+.band-container {
+    background-color: white;
+    color: black;
+}
+
+.band-sections {
+    width: 830px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.band-sections>p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+.band-name>.band-items {
+    width: 33.33%;
+    float: left;
+}
+
+.band-name>.band-items>p {
+    padding: 60px 0 20px 0;
+
+}
+
+.band-name>.band-items>img {
+    width: 170px;
+    border-radius: 7px;
+}
+
+
+/* <---- Tour Section-----> */
+
+.tour-container {
+    background-color: black;
+
+}
+
+.tour-container .tour-sections {
+    width: 780px;
+    margin: 0 auto;
+    padding: 72px 0;
+}
+
+.tour-sections .tour-month-list .tour-month {
+    background-color: white;
+    color: grey;
+    border: 1px solid rgb(198 190 190);
+    padding: 12px 26px;
+    text-align: start;
+
+}
+
+.tour-sections .tour-month-list .tour-month p span {
+    background: #f44336;
+    padding: 5px 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+.tour-sections .tour-month-list .tour-month .num {
+    background: black;
+    padding: 4px 10px;
+    border-radius: 50%;
+    float: right;
+    color: white;
+}
+
+.tour-sections .tour-box-container {
+    background: black;
+    color: white;
+    margin: 35px 0;
+
+}
+
+.tour-box-container .tour-box {
+    width: 33.33%;
+    float: left;
+}
+
+.tour-box-container .tour-box .tour-img {
+    width: 244px;
+    height: 183px;
+}
+
+.tour-box-container .tour-box .tour-img:hover {
+    opacity: 0.6;
+}
+
+.tour-box-container .tour-box .tour-content {
+    padding: 0 0 0 20px;
+    color: black;
+    background-color: white;
+    width: 244px;
+}
+
+.tour-box-container .tour-box .tour-content h3 {
+    font-family: cursive;
+    font-size: 14px;
+    padding: 18px 0 12px;
+}
+
+.tour-box-container .tour-box .tour-content p {
+    padding: 12px 0;
+}
+
+.tour-box-container .tour-box .tour-content .para {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.tour-box-container .tour-box .tour-content a {
+    padding: 12px 10px;
+    margin: 5px 0 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.tour-box-container .tour-box .tour-content a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+
+/* <-------Contact Section----->  */
+.contact-container {
+    color: black
+}
+
+.contact-container .contact-section {
+    width: 780px;
+    margin: 0 auto;
+    padding: 72px 0;
+}
+
+.contact-details {
+    float: left;
+    width: 50%;
+
+}
+
+.contact-details>.contact-box>.contact-info>i {
+    font-size: 17px;
+}
+
+.contact-details>.contact-box>.contact-info>span {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.contact-details {
+    float: left;
+}
+
+form {
+    float: left;
+    width: 50%;
+}
+
+form .form {
+    display: inline-block;
+    width: 49.49%;
+
+}
+
+form .form:nth-child(3) {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+
+}
+
+form .form input {
+    width: 100%;
+    padding: 11px 11px;
+    font-size: 16px;
+
+}
+
+
+form .contact-button {
+    margin-top: 8px;
+    text-align: right;
+}
+
+form .contact-button a {
+    display: inline-block;
+    padding: 10px 17px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+form .contact-button a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+/* <------Location Image----->  */
+.location-img img {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* <----Footer Section ------>  */
+footer {
+    background-color: white;
+    padding: 60px 0;
+}
+
+footer .icons {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+footer .icons i {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+footer .icons i:hover {
+    opacity: 0.6;
+}
+
+footer span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 18px;
+    color: gray;
+}
+
+footer span a {
+    display: inline-block;
+    color: gray;
+    margin-left: 4px;
+}
+
+
+
+/* <-----Utilities Section-----> */
+.psuedo::before,
+.psuedo::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.heading {
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.italic {
+    padding: 20px 0;
+    display: inline-block;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
